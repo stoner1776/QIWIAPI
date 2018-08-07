@@ -26,7 +26,7 @@ setup(
     install_requires=requirements,
     include_package_data=True,
     packages=find_packages(include=['QIWIAPI']),
-    setup_requirements=setup_requirements,
+    setup_requires=setup_requirements,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
