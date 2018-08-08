@@ -31,8 +31,9 @@ QIWI кошельки, а так же, совершать оплату любы�
 ### Установка
 * git clone https://github.com/stoner1776/QIWIAPI.git
 * cd QIWIAPI
-* pip install -r requirements.txt
-* python setup.py install
+* python install setup.py 
+* cd QIWIAPI 
+* pip install QIWIAPI
 
 ---------------------------------------------------------------------------
 ### Запуск
