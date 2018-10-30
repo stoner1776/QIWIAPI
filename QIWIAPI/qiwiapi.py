@@ -1,65 +1,67 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Written by: * StoNeR 1776
+# Copyright 2018 QIWIAPI
+# Written by: * StiNeR 1776 
 # https://github.com/stoner1776/QIWIAPI/
-from QIWIAPI import *
+
+
+# This script is designed for fast and anonymous transactions.
+# For full-fledged anonymous use of this script  you need to - 
+# Connect to the  network TOR,  as  well as a  white  account.
+# All rights reserved. THE MIT LICENSE.
+
+from QIWIAPI import * 
 from time import sleep
-
-print('''
-==============================================================================
-  ___    _____        _____                                           Stable 
- / _ \  |_ _\ \      / /_ _|                                            
-| | | |  | | \ \ /\ / / | |   
-| |_| |_ | | _\ V  V /_ | | _ 
- \__\_(_)___(_)\_/\_/(_)___(_)  //API //     [This script will allow you  to
- 
-perform transactions and transfers using only API, as well as a purse number 
-QIWI purse.] //Soft by StoNeR 1776
-==============================================================================
-
-RESPONSIBILITY:
-
-1.0. This software is provided  EXCLUSIVELY  in the evaluation as well as to 
-     simplify access to transactions and transactions by  using the  API  on 
-     their Wallets;
-1.1. The author  of this software does  not  bear  NO  responsibility if the 
-     script  is  misused;
-1.2. Script is in beta testing, but it is fairly stable. 
-
-1.3. Please  press  [Enter]  to  continue  you  agree with the  above points
-
-''')
-
-print('''Q.I.W.I.A.P.I. Software stable! [v.3.0] // Written by StoNeR 1776
-     
-
-     [Please enter the purse token to check the balance]
-      
-      ''')
-
-token = input('Token: ')                       # https://qiwi.com/api
-phone = input('Phone: ')
-api = QApi(token=token, phone=phone)
-print('Balanse [RUB]')
+log ='''
+    ____ _ __    __ _             _
+   /___ (_) / /\ \ (_) __ _ _ __ (_)
+  //  / / \ \/  \/ / |/ _` | '_ \| |      
+ / \_/ /| |\  /\  /| | (_| | |_) | |    
+ \___,_\|_| \/  \/ |_|\__,_| .__/|_|          
+===========================|_|=======    
+[version: 5.0] /..Fast translations 
+                     and anonymity../
+'''
+print(log)
+def user_info():
+  global token,api
+  token=input('Enter token: ') 
+  api = QApi(token=token, phone="") 
+  try: 
+    print('Balance:',api.balance) 
+  except:
+    print('Error check!')
+    return user_info()
+user_info()
+acc=input('Phone: +')
+com=input('Comment: ') 
+t=input('Mod id? ')
+if t == 'y':
+  print (api.full_balance)
+  id = input('Id: ')
+else:
+    id='643'
+def pay_info():
+  try:
+    api.pay(account=acc, amount=input('Pay: '), comment=com, acc_id=id, currency='643') 
+  except:
+    print('Error pay!')
+    return pay_info()
+pay_info()
 print(api.balance)
-print('''
-     [Please  enter  the purse  number, as  well  as the 
-     amount  of the  transfer  and  comments  to  it...]
-     ''')
-account = input('Number: ')
-amount = input('Money [min 2$]: ')
-comment = input('сomment: ')
-api.pay(account=account, amount=amount, comment=comment)
-
-print('Сonfirmed!') 
-print(api.balance)                   
-print('''
-==============================================================================
-   _____ __        _   __     ____     __________________
-  / ___// /_____  / | / /__  / __ \   <  /__  /__  / ___/
-  \__ \/ __/ __ \/  |/ / _ \/ /_/ /   / /  / /  / / __ \ 
- ___/ / /_/ /_/ / /|  /  __/ _, _/   / /  / /  / / /_/ / 
-/____/\__/\____/_/ |_/\___/_/ |_|   /_/  /_/  /_/\____/  
-                                                          www.stoner1776.pro        
-==============================================================================
-''')
+print('Successfull!')
+def user_exit():
+	try:
+		enter=input('Please press [Enter] to exit ')
+		log2 ='''
+    ______       _  __    ___ _______________
+   / __/ /____  / |/ /__ / _ <  /_  /_  / __/
+  _\ \/ __/ _ \/    / -_) , _/ / / / / / _ \ 
+ /___/\__/\___/_/|_/\__/_/|_/_/ /_/ /_/\___/ 
+==============www.stoner1776.pro=============
+'''
+		print(log2)
+	except:
+		print('Error')
+		return user_exit()
+user_exit()

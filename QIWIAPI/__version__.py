@@ -1,8 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Written by: * StoNeR 1776
-# https://github.com/stoner1776/QIWIAPI/
+#       _          _             _ 
+#  __ _(_)_      _(_) __ _ _ __ (_)
+# / _` | \ \ /\ / / |/ _` | '_ \| |
+#| (_| | |\ V  V /| | (_| | |_) | |
+# \__, |_| \_/\_/ |_|\__,_| .__/|_|
+#    |_|  Code by  StoNeR 1776  |_|
+#
+# Anonymous transactions in QIWI wallets
+#
 
-from QIWIAPI.Errors import *
-from QIWIAPI.Session import *
-from QIWIAPI.__version__ import *
+VERSION = (5, 0,)
+
+__version__ = '.'.join(map(str, VERSION))
