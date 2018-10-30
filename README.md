@@ -1,44 +1,45 @@
                _          _             _ 
           __ _(_)_      _(_) __ _ _ __ (_)
          / _` | \ \ /\ / / |/ _` | '_ \| |
-        | (_| | |\ V  V /| | (_| | |_) | |        ...Script is in testing,    
-         \__, |_| \_/\_/ |_|\__,_| .__/|_|         but it is fairly stable...
-            |_|Code by StoNeR1776|_|v 3.0      
+        | (_| | |\ V  V /| | (_| | |_) | |          
+         \__, |_| \_/\_/ |_|\__,_| .__/|_|   ...this is stable version...    
+            |_|Code by StoNeR1776|_|v 5.0      
             
-### Описание
-Данный скрипт поможет быстро проводить анонимные  транзакции на любые 
-QIWI кошельки, а так же, совершать оплату любых услуг, через QIWI без 
-статистики и необходимости в пароле.
+### description
+This script will help you quickly conduct anonymous transactions on any
+QIWI wallets, as well as to pay for any services, through QIWI without
+statistics and the need for a password.
 
 ---------------------------------------------------------------------------
-### Возможности  
-* Оплата любых услуг;
-* Переводы на любой QIWI Кошелек;
-* Анонимные транзакции;
-* Отсутствие статистики по платежам.
+### capabilities  
+* Payment for any services;
+* Transfers to any QIWI Wallet;
+* Anonymous transactions;
+* Absence of statistics on payments.
+
 ---------------------------------------------------------------------------
-### Зависимости
+### dependencies
 * python3
 * requests
 * uuid
+
 ---------------------------------------------------------------------------
-### Установка №1
+### install
 * git clone https://github.com/stoner1776/QIWIAPI.git
 * cd QIWIAPI
 * python install setup.py
+
 ---------------------------------------------------------------------------
-### Установка №2
-* pip install QIWIAPI
----------------------------------------------------------------------------
-### Запуск
+### setup
 * cd QIWIAPI
-* python qiwi.api.py
+* python qiwiapi.py
+
 ---------------------------------------------------------------------------
-### Получение баланса
+### ballance
 [Токен] + [Номер кошелька]
 
 ---------------------------------------------------------------------------
-### Перевод или оплата услуг
+### transfer or payment for services
 [Токен] + [Номер счёта] + [Сумма/Комментарий]
 
 ---------------------------------------------------------------------------
