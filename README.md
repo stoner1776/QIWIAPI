@@ -38,7 +38,7 @@ statistics and the need for a password.
 ---------------------------------------------------------------------------
 ### setup
 * cd QIWIAPI
-* python qiwiapi.py
+* python3 qiwiapi.py
 
 ---------------------------------------------------------------------------
 ### ballance
