@@ -24,10 +24,16 @@ statistics and the need for a password.
 * uuid
 
 ---------------------------------------------------------------------------
-### install
+### install (option 1)
 * git clone https://github.com/stoner1776/QIWIAPI.git
 * cd QIWIAPI
 * python install setup.py
+
+---------------------------------------------------------------------------
+### install (option 2)
+* git clone https://github.com/stoner1776/QIWIAPI.git
+* cd QIWIAPI/ cd QIWIAPI
+* pip3 install QIWIAPI
 
 ---------------------------------------------------------------------------
 ### setup
