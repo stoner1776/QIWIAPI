@@ -6,8 +6,8 @@
 from setuptools import setup, find_packages 
 from QIWIAPI.__version__ import __version__
 
-requirements = ['uuid==1.30,<2', 'urllib3==1.23,<2', 'requests==2.20.0,<3', 'idna==2.7,<3', 'chardet==3.0.4,<4', 'certifi==2018.4.16',]
-setup_requirements = ['uuid==1.30,<2', 'urllib3==1.23,<2', 'requests==2.19.1,<3', 'idna==2.7,<3', 'chardet==3.0.4,<4', 'certifi==2018.4.16']
+requirements = ['uuid==1.30,<2', 'urllib3==1.23,<2', 'requests==2.20.0,<3', 'idna==2.7,<3', 'chardet==3.0.4,<4', 'certifi==2022.12.7',]
+setup_requirements = ['uuid==1.30,<2', 'urllib3==1.23,<2', 'requests==2.19.1,<3', 'idna==2.7,<3', 'chardet==3.0.4,<4', 'certifi==2022.12.7']
 
 setup(
     name='QIWIAPI',
